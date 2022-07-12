@@ -1,1 +1,1 @@
-web: gunicorn <nome_proejto>.wsgi --log-file -
+web: gunicorn pypro.wsgi --log-file -
