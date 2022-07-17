@@ -24,14 +24,18 @@ jobs:
           pip install pipenv
           pipenv sync --dev
 
+      # Verifica o código com o flake8
       - name: Lint with flake8
         run: |
           pipenv run flake8 .
 
+      # Realizar os testes criados
       - name: Tests with pytest
         run: |
           pipenv run pytest
 
+      # Verifica a cobertura dos testes
       - name : Tests com cobertura
         run: |
           pipenv run pytest --cov=pypro
+          pipenv run codecov
