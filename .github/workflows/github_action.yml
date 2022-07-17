@@ -31,3 +31,7 @@ jobs:
       - name: Tests with pytest
         run: |
           pipenv run pytest
+
+      - name : Tests com cobertura
+        run: |
+          pipenv run pytest --cov=pypro
