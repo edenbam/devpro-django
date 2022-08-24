@@ -144,7 +144,6 @@ if AWS_ACCESS_KEY_ID:
     AWS_S3_CUSTOM_DOMAIN = None  # Para utilizar o próprio domínio do S3
     AWS_DEFAULT_ACL = 'private'  # Para que os arquivos do S3 não fiquem públicos
 
-
     COLLECTFAST_ENABLED = True
 
     # Static Assets
